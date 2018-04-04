@@ -24,7 +24,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene()
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -38,6 +38,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
         // Run the view's session
         sceneView.session.run(configuration)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch = touches.first
+        
+        let location = touch?.location(in: sceneView)
+        let hitResults = sceneView.hitTest(location!, types: .featurePoint)
+        
+        if let hitResult = hitResults.first {
+            let transform = hitResult.worldTransform
+            let position = SCNVector3(x: transform.columns.3.x, y: transform.columns.3.y, z: transform.columns.3.z)
+            
+            let earthNode = EarthNode()
+            earthNode.position = position
+            sceneView.scene.rootNode.addChildNode(earthNode)
+            
+        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {

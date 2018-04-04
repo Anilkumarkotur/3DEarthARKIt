@@ -15,6 +15,7 @@
 		0D6CE58C206F7C9A0016EFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6CE58A206F7C9A0016EFE4 /* LaunchScreen.storyboard */; };
 		0D6CE597206F7C9A0016EFE4 /* _DEarthARKItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6CE596206F7C9A0016EFE4 /* _DEarthARKItTests.swift */; };
 		0D6CE5A2206F7C9A0016EFE4 /* _DEarthARKItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6CE5A1206F7C9A0016EFE4 /* _DEarthARKItUITests.swift */; };
+		0D6CE5B0206F7E0D0016EFE4 /* EarthNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6CE5AF206F7E0D0016EFE4 /* EarthNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0D6CE59D206F7C9A0016EFE4 /* 3DEarthARKItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DEarthARKItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6CE5A1206F7C9A0016EFE4 /* _DEarthARKItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DEarthARKItUITests.swift; sourceTree = "<group>"; };
 		0D6CE5A3206F7C9A0016EFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6CE5AF206F7E0D0016EFE4 /* EarthNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0D6CE57E206F7C9A0016EFE4 /* 3DEarthARKIt */ = {
 			isa = PBXGroup;
 			children = (
+				0D6CE5AF206F7E0D0016EFE4 /* EarthNode.swift */,
 				0D6CE57F206F7C9A0016EFE4 /* AppDelegate.swift */,
 				0D6CE581206F7C9A0016EFE4 /* art.scnassets */,
 				0D6CE583206F7C9A0016EFE4 /* ViewController.swift */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6CE584206F7C9A0016EFE4 /* ViewController.swift in Sources */,
+				0D6CE5B0206F7E0D0016EFE4 /* EarthNode.swift in Sources */,
 				0D6CE580206F7C9A0016EFE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
