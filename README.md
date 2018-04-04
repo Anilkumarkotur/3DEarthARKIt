@@ -1,2 +1,6 @@
 # 3DEarthARKIt
-placing 3D earth on real world using ARkit
+
+Experiment project on ARkit 
+
+Tap to place a 3D Earth 
+
